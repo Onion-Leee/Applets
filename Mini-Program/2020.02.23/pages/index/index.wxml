@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+
+ 
+  
+
+  <view>{{text}}</view>
+  <button bindtap="changeText"> change normal data </button>
+  <view>{{array[0].text}}</view>
+  <button bindtap="changeItemInArray"> change array data </button>
+  <view>{{obj.text}}</view>
+  <button bindtap="changeItemInObject"> change object data </button>
+  <view>{{newField.text}}</view>
+  <button bindtap="addNewField"> Add new data </button>
+
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

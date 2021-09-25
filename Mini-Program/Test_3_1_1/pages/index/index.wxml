@@ -1,0 +1,42 @@
+<!-- 组合index.wxml
+<!-- <view wx:for="{{[zero,1,2,3,4]}}"> {{item}} </view> -->
+<!--对象-->
+<!-- <template is="objectCombinr" data="{{for: a, bar: b}}"></template> -->
+<!-- 九九乘法表 -->
+<!-- <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+	<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+		<view wx:if="{{i <= j}}">
+			{{i}} * {{j}} = {{i*j}}
+		</view>
+	</view>
+</view> -->
+
+<!-- 判断奇偶 -->
+<!-- <template name="odd">
+	<view>odd</view>
+</template>
+<template name="even">
+	<view>even</view>
+</template>
+
+<block wx:for="{{[1,2,3,4,6]}}">
+	<template is="{{item % 2 == 0 ? 'even' : 'odd'}}" />
+</block> -->
+
+<!-- 引用import -->
+<!-- <import src="item.wxml" />
+<template is="item" data="{{text: 'forbar'}}" /> -->
+
+<!-- 引用include -->
+<!-- <include src="header.wxml" />
+<view> body </view>
+<include src="footer.wxml" /> -->
+
+
+<!-- 事件绑定 -->
+<!-- <view id="tapTest" data-hi="MINA" bindtap="tapName"> Click me!</view> -->
+
+
+<!-- bindviewtap.wxml
+<view data-alpha-beta="1" data-alphaBeta="2" bindtap="bindViewTap">
+	DataSet Test </view> -->
